@@ -5,10 +5,8 @@ import autoTable from 'jspdf-autotable';
 @Injectable()
 export class AppService {
   doc = new jsPDF({
-    orientation: 'portrait',
     unit: 'mm',
-
-    format: [500, 210],
+    format: [210, 500],
   });
 
   async getPdf(name: string): Promise<string> {
