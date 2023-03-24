@@ -6,7 +6,7 @@ import autoTable from 'jspdf-autotable';
 export class AppService {
   doc = new jsPDF({
     unit: 'mm',
-    format: [210, 500],
+    format: [500, 210],
   });
 
   async getPdf(name: string): Promise<string> {
